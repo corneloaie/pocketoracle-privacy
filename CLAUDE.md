@@ -22,9 +22,9 @@ When updating the privacy policy, inspect the following to ensure nothing is mis
 
 ## Update Checklist
 
-When updating `index.html`:
+When updating `index.html` or `terms.html`:
 
-1. Read the current `index.html` first
+1. Read the relevant file (`index.html` for privacy policy, `terms.html` for terms/EULA) first
 2. Check the main repo for any new SDKs, analytics events, or data flows
 3. Update affected sections — do not rewrite sections that haven't changed
 4. Update the "Last updated" date at the top
