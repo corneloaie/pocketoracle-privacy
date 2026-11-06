@@ -15,7 +15,7 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p><strong>Last updated:</strong> October 1, 2026</p>
+  <p><strong>Last updated:</strong> November 6, 2026</p>
 
   <p>PocketOracle ("we", "our", or "us"), created by Oaie Cornel-Sebastian, is committed to protecting your privacy. This policy explains what information is collected when you use the PocketOracle mobile application ("the App") and how it is used. The App is provided as a freemium service on an "as is" basis.</p>
 
@@ -41,6 +41,9 @@
       <strong>Firebase Remote Config and A/B Testing (Google)</strong> – used to remotely configure app behavior, such as the free question limit, the cooldown timer, rewarded-ad settings, limited editions, and the minimum required app version, and to compare different settings across groups of users. Remote Config receives your device's country and language codes, time zone, operating-system and app version, and a Firebase installation identifier. See the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>.
     </li>
     <li>
+      <strong>Firebase Cloud Messaging (Google)</strong> – used only if you turn on news notifications (see Section 2), to send you occasional news such as new editions. The App does not register with Cloud Messaging until you turn them on. When you do, Cloud Messaging receives a Firebase installation identifier and a push registration token for your installation (on iOS, linked to the device token Apple assigns for push notifications), and the App subscribes that token to the news topic for your app language (for example "news_en"), so that you receive news in your language. Google Analytics for Firebase records when a news notification is received or opened, and which campaign it belongs to. When you turn news notifications off, the App deletes its push registration token, and no further news is delivered. See the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>.
+    </li>
+    <li>
       <strong>RevenueCat</strong> – used to manage in-app purchases and Pro status. RevenueCat receives your purchase history (products, prices, dates, and store transaction identifiers) linked to a random anonymous identifier it creates for your installation; we do not ask for your name or email address. RevenueCat also receives information about the rewarded ads you watch, linked to the same identifier, so that we can see ad and purchase revenue together: when an ad is loaded, fails to load, is shown, or is tapped, the ad network and ad unit that provided it, where in the App it was offered (for an extra answer or a Love Edition pass), and the revenue Google reports for it. We also give RevenueCat your Google Analytics app-instance identifier so that purchase events can be reported to Google Analytics. See the <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a>.
     </li>
     <li>
@@ -58,7 +61,7 @@
   <ul>
     <li><strong>Android advertising ID and app set ID</strong> – on Android, the Google Mobile Ads SDK reads your device's advertising ID and app set ID, and Google Analytics for Firebase reads your advertising ID, for advertising, analytics, and fraud prevention. You can reset or delete your advertising ID at any time in your device settings (for example Settings &gt; Privacy &gt; Ads, or Settings &gt; Google &gt; Ads, depending on your device).</li>
     <li><strong>Apple advertising identifier (IDFA)</strong> – on iOS, the App does not ask for App Tracking Transparency permission, so neither we nor the services above can access your IDFA, and the App does not track you across apps and websites owned by other companies.</li>
-    <li><strong>Other identifiers</strong> – Google Analytics uses an app-instance identifier and, on iOS, the identifier for vendor (IDFV); Firebase uses a Firebase installation identifier; Crashlytics uses a crash-reporting installation identifier; and RevenueCat uses a random anonymous customer identifier. These identifiers relate to your installation of the App, not to your name or email address, and are generally replaced with new ones if you delete and reinstall the App.</li>
+    <li><strong>Other identifiers</strong> – Google Analytics uses an app-instance identifier and, on iOS, the identifier for vendor (IDFV); Firebase uses a Firebase installation identifier; if you turn on news notifications, Firebase Cloud Messaging uses a push registration token (and, on iOS, Apple's push device token); Crashlytics uses a crash-reporting installation identifier; and RevenueCat uses a random anonymous customer identifier. These identifiers relate to your installation of the App, not to your name or email address, and are generally replaced with new ones if you delete and reinstall the App.</li>
   </ul>
 
   <h3>1.5 Your Advertising Privacy Choices</h3>
@@ -74,14 +77,15 @@
     <li>Your selected app language</li>
     <li>Your selected edition (Classic, Love, or a limited edition) and, if you unlocked it by watching an ad, when your Love Edition pass ends</li>
     <li>Your free question count, the time at which your free questions reset, and the extra answers you unlocked by watching ads</li>
-    <li>Your reminder settings and the time you last asked a question (used to plan reminders)</li>
+    <li>Your reminder and news notification settings, the news topic your installation is subscribed to, and the time you last asked a question (used to plan reminders)</li>
     <li>Whether the pro-feature swipe hint has already been shown to you</li>
     <li>Your Journal, if you use it: the questions you choose to save (up to 150 characters each), the Oracle's answers, the edition, the date, and whether you marked each answer as right or wrong. The Journal keeps up to 200 entries, and you can delete any entry in the App.</li>
     <li>The Daily Omen texts shown by the home-screen widget (the same omen for every user each day)</li>
   </ul>
   <p>Google's User Messaging Platform also stores your advertising consent choices on your device.</p>
   <p>Your device's own backup features (such as Android backup to your Google account, or iCloud and computer backups on iOS) may include this data in backups that you control. We cannot access those backups. Deleting the App removes this data from your device.</p>
-  <p><strong>Notifications.</strong> If you turn on reminders, the App schedules local notifications on your device: daily reminders, a "free questions are back" alert, and Journal check-ins a week after you save a question. They are created on your device, not sent from a server, and Journal check-ins never contain your question. When you tap one, the App records which kind of notification you opened in Google Analytics, but not its text. You can turn reminders off in the App's Reminders settings or in your device settings.</p>
+  <p><strong>Notifications.</strong> If you turn on reminders, the App schedules local notifications on your device: reminders (daily for a week, then weekly for three weeks, after which they stop until you open the App again), a "free questions are back" alert, and Journal check-ins a week after you save a question. They are created on your device, not sent from a server, and Journal check-ins never contain your question. When you tap one, the App records which kind of notification you opened in Google Analytics, but not its text. You can turn reminders off in the App's Reminders settings or in your device settings.</p>
+  <p><strong>News notifications.</strong> News notifications are off unless you turn them on in the App, for example with the News switch in the App's Reminders settings. Unlike reminders, they are sent by us through Firebase Cloud Messaging (Section 1.2), to everyone who turned them on in the same app language; they never contain anything about you, your questions, or your Journal. You can turn them off at any time with the same switch or in your device's notification settings.</p>
   <p><strong>Home-screen widget.</strong> The Daily Omen widget only displays omen text that the App saves on your device; it sends nothing off your device.</p>
   <p><strong>Sharing.</strong> When you share an answer, the App creates an image of the answer (it does not include your question) and hands it to your device's share sheet. Where it goes next is up to you and the app you choose; we do not receive it. If you choose "Save Image" on iOS, the image is added to your photo library; the App cannot read your photos.</p>
 
@@ -95,7 +99,8 @@
     <li>find and fix crashes (Crashlytics);</li>
     <li>show the optional rewarded ads that fund the free version, measure them, and prevent ad fraud (Google Mobile Ads);</li>
     <li>provide and restore Pro purchases, and measure purchase and ad revenue together (RevenueCat);</li>
-    <li>deliver the reminders you turn on (on your device only).</li>
+    <li>deliver the reminders you turn on (on your device only);</li>
+    <li>send the news notifications you turn on, and measure how many are received and opened (Firebase Cloud Messaging and Google Analytics).</li>
   </ul>
   <p>We do not sell your personal information for money, and we do not use your information to send you marketing emails. Under some US state laws, making advertising identifiers available to Google for personalized ads may count as "selling" or "sharing" personal information; you can limit this by resetting or deleting your advertising ID, or by opting out of ads personalization, in your device settings (Section 1.4).</p>
 
@@ -114,6 +119,7 @@
     <li><strong>Google Analytics for Firebase</strong> – user-level and event-level data is kept for up to 14 months; aggregated reports that do not identify you may be kept longer.</li>
     <li><strong>Firebase Crashlytics</strong> – crash reports and their identifiers are kept for 90 days.</li>
     <li><strong>Firebase Remote Config</strong> – Firebase installation identifiers are kept until we ask Firebase to delete them, and are then removed within 180 days.</li>
+    <li><strong>Firebase Cloud Messaging</strong> – your push registration token and its news topic subscription stop working when you turn news notifications off, because the App deletes the token. Firebase installation identifiers are kept as described for Remote Config.</li>
     <li><strong>Google Mobile Ads</strong> – kept according to <a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener noreferrer">Google's data retention policy</a>.</li>
     <li><strong>RevenueCat</strong> – purchase records and ad events are kept as described in the <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a> and can be deleted at our request.</li>
   </ul>
@@ -123,7 +129,7 @@
   <ul>
     <li>review or change your advertising consent choices with <strong>Privacy choices</strong> on the App's home screen, where available (Section 1.5);</li>
     <li>reset or delete your Android advertising ID, or opt out of ads personalization, in your device settings;</li>
-    <li>turn reminders off in the App or in your device's notification settings.</li>
+    <li>turn reminders and news notifications off in the App or in your device's notification settings.</li>
   </ul>
 
   <h2>8. Security</h2>
